@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import { LuBrain } from "react-icons/lu";
+import { useNavigate } from 'react-router-dom';
 
 const FormContainer = styled.div`
     display: flex;
@@ -17,15 +18,7 @@ const FormContainer = styled.div`
     & #Input{
         width: 100%;
     }
-    & a{
-        cursor: pointer;
-        text-decoration: none;
-        transition: 0.3s;
-    }
 
-    & a:hover{
-        scale: 1.05;
-    }
 
     & h1 {
       font-size: 2em;
@@ -33,6 +26,8 @@ const FormContainer = styled.div`
 `;
 
 const RegisterForm = () => {
+    const navigate = useNavigate();
+
   return (
     <FormContainer>
         <h1>MindEase <LuBrain size={"1.5em"} /></h1>
@@ -44,12 +39,10 @@ const RegisterForm = () => {
       >
         <Form.Control type="email" placeholder="name@example.com" />
       </FloatingLabel>
-      <a style={{ marginLeft: 'auto' }} className='mb-1' href="">Esqueceu a senha?</a>
       <FloatingLabel id='Input' controlId="floatingPassword" className='mb-2' label="Senha">
         <Form.Control type="password" placeholder="Password" />
       </FloatingLabel>
-      <a style={{ marginRight: 'auto' }} className='mb-1' href="">Não tem conta?</a>
-      <Button size='lg' variant="primary">Registrar-se</Button>
+      <Button onClick={() => navigate("/")} size='lg' variant="primary">Registrar-se</Button>
     </FormContainer>
   );
 }
