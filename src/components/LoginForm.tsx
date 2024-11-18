@@ -14,7 +14,10 @@ const FormContainer = styled.div`
     height: auto;
     padding: 30px;
     border-radius: 20px;
-    background-color: aqua;
+  
+    -webkit-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
+    box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
     & #Input{
         width: 100%;
     }

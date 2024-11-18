@@ -14,7 +14,9 @@ const FormContainer = styled.div`
     height: auto;
     padding: 30px;
     border-radius: 20px;
-    background-color: aqua;
+    -webkit-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
+    box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
     & #Input{
         width: 100%;
     }
@@ -39,10 +41,7 @@ const FormContainer = styled.div`
 const RegisterForm = () => {
     const navigate = useNavigate();
 
-    const registrar = () => {
-        console.log("Registrado");
-        navigate("/");
-    }
+
 
     return (
         <FormContainer>
@@ -78,15 +77,10 @@ const RegisterForm = () => {
             >
                 <Form.Control type="email" placeholder="name@example.com" />
             </FloatingLabel>
-            <FloatingLabel id='Input' controlId="floatingPassword" className='mb-3' label="Senha*">
-                <Form.Control type="password" placeholder="Password" />
-            </FloatingLabel>
-            <FloatingLabel id='Input' controlId="floatingPassword" className='mb-2' label="Confirmar Senha*">
-                <Form.Control type="password" placeholder="Password" />
-            </FloatingLabel>
+
 
             <a onClick={() => navigate("/")} className='mb-1' style={{ marginRight: 'auto' }} >Já tem conta?</a>
-            <Button onClick={() => registrar()} size='lg' variant="primary">Registrar-se</Button>
+            <Button onClick={() => navigate("senha")} size='lg' variant="primary">Seguir</Button>
         </FormContainer>
     );
 }
