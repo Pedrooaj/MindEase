@@ -11,7 +11,7 @@ const FormContainer = styled.div`
     align-items: center;
     flex-direction: column;
     width: 80%;
-    height: aut;
+    height: auto;
     padding: 30px;
     border-radius: 20px;
     background-color: aqua;
@@ -19,7 +19,7 @@ const FormContainer = styled.div`
         width: 100%;
     }
     & a{
-        cursor: pointer;  
+        cursor: pointer;
         text-decoration: none;
         transition: 0.3s;
     }
