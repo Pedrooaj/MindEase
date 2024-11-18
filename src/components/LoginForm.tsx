@@ -11,7 +11,7 @@ const FormContainer = styled.div`
     align-items: center;
     flex-direction: column;
     width: 80%;
-    height: 45%;
+    height: aut;
     padding: 30px;
     border-radius: 20px;
     background-color: aqua;
