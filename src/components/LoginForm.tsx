@@ -4,8 +4,11 @@ import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import { LuBrain } from "react-icons/lu";
 import { useNavigate } from 'react-router-dom';
+import Alerta from './Alert';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const FormContainer = styled.div`
+const FormContainer = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,24 +41,42 @@ const FormContainer = styled.div`
 
 const LoginForm = () => {
   const navigate = useNavigate();
+  const [erro, setErro] = useState(false);
+  const [user, setUser] = useState({
+    cpf: "",
+    senha: ""
+  });
+
+  const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if(!user.cpf || !user.senha){
+      setErro(true);
+    }
+    
+    toast("Seja bem Vindo!", { position: "bottom-left" });
+    
+  }
 
   return (
-    <FormContainer>
+    <FormContainer onSubmit={submitForm} >
         <h1>MindEase <LuBrain size={"1.5em"} /></h1>
+       { erro ? <Alerta variant='danger'>Preencha todos os campos</Alerta> : null }
       <FloatingLabel
         controlId="floatingInput"
         label="CRM/CPF"
         className="mb-3"
         id='Input'
+        
       >
-        <Form.Control type="email" placeholder="name@example.com" />
+        <Form.Control type="text" placeholder="Nome" onChange={(e) => setUser({...user, cpf: e.target.value})} />
       </FloatingLabel>
       <a onClick={() => navigate("/")} style={{ marginLeft: 'auto' }} className='mb-1' >Esqueceu a senha?</a>
       <FloatingLabel id='Input' controlId="floatingPassword" className='mb-2' label="Senha">
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Password" onChange={(e) => setUser({...user, senha: e.target.value})} />
       </FloatingLabel>
       <a onClick={() => navigate("/registro")} style={{ marginRight: 'auto' }} className='mb-1'>Não tem conta?</a>
-      <Button size='lg' variant="primary">Entrar</Button>
+      <Button size='lg' type='submit' variant="primary">Entrar</Button>
     </FormContainer>
   );
 }
