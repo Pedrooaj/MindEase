@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { TfiAgenda } from "react-icons/tfi";
+import { IoIosChatbubbles } from "react-icons/io";
+import { MdAccountCircle } from "react-icons/md";
 
 
 const Nav = styled.div`
@@ -19,11 +22,17 @@ const Nav = styled.div`
 
     }
     & ul li{
+
         font-size: 1.3rem;
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     & ul li a{
+        color: black;
         text-decoration: none;
+
     }
 `
 
@@ -33,9 +42,9 @@ const NavBottom = () => {
     return (
         <Nav>
             <ul>
-                <li><a href="">Agenda</a></li>
-                <li><a href="">Dialogo</a></li>
-                <li><a href="">Conta</a></li>
+                <li><TfiAgenda size={40} /> <a href="">Agenda</a></li>
+                <li><IoIosChatbubbles size={40} /><a href="">Dialogo</a></li>
+                <li><MdAccountCircle size={40} /><a href="">Conta</a></li>
             </ul>
         </Nav>
     )
