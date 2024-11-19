@@ -23,7 +23,7 @@ const Contain = styled.div`
         background-color: transparent;
         border: none;
         outline: 0;
--
+
     }
 
 `
