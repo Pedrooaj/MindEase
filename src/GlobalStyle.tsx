@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 #root{
+  overflow: hidden;
   width: 100%;
   height: 100dvh;
   display: flex;
