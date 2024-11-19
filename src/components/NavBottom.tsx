@@ -10,7 +10,7 @@ const Nav = styled.div`
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 7px;
     position: absolute;
     bottom: 0;
     & ul {
