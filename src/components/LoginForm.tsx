@@ -52,6 +52,7 @@ const LoginForm = () => {
 
     if(!user.cpf || !user.senha){
       setErro(true);
+      return;
     }
 
     toast("Seja bem Vindo!", { position: "bottom-left" });
