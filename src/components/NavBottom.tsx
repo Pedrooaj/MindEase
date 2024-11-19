@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const Nav = styled.div`
-    background-color: aqua;
+    background-color: gray;
     display: flex;
     align-items: center;
     width: 100%;
