@@ -4,6 +4,8 @@ import Login from "./routes/Login";
 import Registro from "./routes/Registro/Registro";
 import Senha from "./routes/Registro/Senha";
 import { ToastContainer } from "react-toastify";
+import Default from "./routes/App/Default";
+import Home from "./routes/App/Home";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +15,9 @@ const AppRoutes = () => {
         <Route path="/registro">
         <Route index element={<Registro />} />
         <Route path="senha" element={<Senha />} />
+        </Route>
+        <Route path="/app" element={<Default />}>
+          <Route index element={<Home />} />
         </Route>
       </Routes>
       <ToastContainer />
