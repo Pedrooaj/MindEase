@@ -4,8 +4,9 @@ import styled from "styled-components"
 const Contain = styled.div`
     margin-bottom: auto;
     width: 80%;
-    height: 7dvh;
+    height: 5dvh;
     background-color: aqua;
+    border: 2px solid black;
     padding: 7px;
     border-radius: 10px;
 
@@ -14,6 +15,7 @@ const Contain = styled.div`
         height: 100%;
         background-color: transparent;
         border: none;
+        outline: 0;
     }
 
 `

@@ -18,7 +18,7 @@ const Content  = styled.div`
     padding: 20px;
 `
 
-const Default= () => {
+const Default = () => {
     return (
         <Container>
             <Content>
