@@ -3,6 +3,9 @@ import styled from "styled-components"
 
 const Contain = styled.div`
     margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     height: 5dvh;
     background-color: aqua;
