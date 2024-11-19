@@ -11,7 +11,7 @@ const Card = styled.div`
     border: 2px solid black;
     justify-content: center;
     padding: 10px 30px 10px 30px;
-    & #content{
+    & #content-card{
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -27,7 +27,7 @@ const ConsultaCard: React.FC<{nome: string, data: string}> = ({nome, data}) => {
     return (
         <Card>
             <h1>{nome}</h1>
-            <div id="content">
+            <div id="content-card">
                 <MdAccountCircle size={55} />
                 <h2>{data}</h2>
             </div>
