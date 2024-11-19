@@ -22,7 +22,7 @@ const Nav = styled.div`
         font-size: 1.3rem;
         list-style: none;
     }
-    & ul li {
+    & ul li a{
         text-decoration: none;
     }
 `
