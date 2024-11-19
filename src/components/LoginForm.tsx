@@ -53,7 +53,7 @@ const LoginForm = () => {
     if(!user.cpf || !user.senha){
       setErro(true);
     }
-    
+
     toast("Seja bem Vindo!", { position: "bottom-left" });
     
   }
@@ -61,7 +61,7 @@ const LoginForm = () => {
   return (
     <FormContainer onSubmit={submitForm} >
         <h1>MindEase <LuBrain size={"1.5em"} /></h1>
-       { erro ? <Alerta variant='danger'>Preencha todos os campos</Alerta> : null }
+       { erro ? <Alerta variant='danger'>❌ Preencha todos os campos ❌</Alerta> : null }
       <FloatingLabel
         controlId="floatingInput"
         label="CRM/CPF"
