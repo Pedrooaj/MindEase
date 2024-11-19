@@ -10,7 +10,6 @@ const Contain = styled.div`
     padding: 0;
     width: 80%;
     height: 7dvh;
-    background-color: #0B5ED7;
     opacity: 0.8;
     border: 2px solid black;
     padding: 7px;
@@ -23,7 +22,6 @@ const Contain = styled.div`
         background-color: transparent;
         border: none;
         outline: 0;
-
     }
 
 `
