@@ -6,7 +6,7 @@ const Nav = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 7dvh;
+    height: 10dvh;
     position: absolute;
     bottom: 0;
     & ul {
@@ -30,9 +30,9 @@ const NavBottom = () => {
     return (
         <Nav>
             <ul>
-                <li>Agenda</li>
-                <li>Dialogo</li>
-                <li>Conta</li>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">Dialogo</a></li>
+                <li><a href="">Conta</a></li>
             </ul>
         </Nav>
     )
