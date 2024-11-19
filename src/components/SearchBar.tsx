@@ -6,6 +6,7 @@ const Contain = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
     width: 80%;
     height: 5dvh;
     background-color: aqua;
