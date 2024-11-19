@@ -8,7 +8,7 @@ const Contain = styled.div`
     justify-content: center;
     padding: 0;
     width: 80%;
-    height: 5dvh;
+    height: 7dvh;
     background-color: aqua;
     border: 2px solid black;
     padding: 7px;
