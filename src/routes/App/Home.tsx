@@ -23,8 +23,6 @@ const Home = () => {
                 <ConsultaCard nome="Dr.Mário" data="10/11/2024"/>
                 <ConsultaCard nome="Dr.Pedro" data="07/11/2024"/>
                 <ConsultaCard nome="Dr.Marcos" data="03/12/2024"/>
-                <ConsultaCard nome="Dr.Marcos" data="03/12/2024"/>
-                <ConsultaCard nome="Dr.Marcos" data="03/12/2024"/>
             </Cards>
         </>
     )
