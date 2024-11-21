@@ -45,9 +45,9 @@ const NavBottom = () => {
     return (
         <Nav>
             <ul>
-                <li><TfiAgenda size={30} /> <a href="">Agenda</a></li>
-                <li><IoIosChatbubbles size={30} /><a href="">Dialogo</a></li>
-                <li><MdAccountCircle size={30} /><a href="">Conta</a></li>
+                <li><TfiAgenda size={25} /> <a href="">Agenda</a></li>
+                <li><IoIosChatbubbles size={25} /><a href="">Dialogo</a></li>
+                <li><MdAccountCircle size={25} /><a href="">Conta</a></li>
             </ul>
         </Nav>
     )
