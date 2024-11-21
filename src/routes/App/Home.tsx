@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
             <SearchBar />
-            <Button className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
+            <Button style={{ fontSize: "1.6rem" }} className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
             <Agendar title="Agendar" subtitle="" content={
                 <Form>
 

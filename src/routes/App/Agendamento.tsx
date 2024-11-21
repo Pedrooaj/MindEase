@@ -46,15 +46,15 @@ const Agendamento = () => {
     const navigate = useNavigate();
     return (
         <Container>
-            <GoArrowLeft onClick={() => navigate(-1)} size={50} style={{ marginRight: "auto", borderRight: "2px solid black", borderBottom: "2px solid black", cursor: "pointer" }} />
+            <GoArrowLeft onClick={() => navigate(-1)} size={40} style={{ marginRight: "auto", cursor: "pointer" }} />
             <TbCalendarClock size={75} style={{ marginTop: "auto"  }} />
             <StatusAgendamento />
             <div id="buttons">
                 <ul>
  
-                    <li><GoX size={50} /></li>
-                    <li style={{ marginBottom: "75px" }} ><IoIosChatbubbles  size={50} /></li>
-                    <li><GoCheck size={50} /></li>  
+                    <li><GoX size={45} /></li>
+                    <li style={{ marginBottom: "75px" }} ><IoIosChatbubbles  size={45} /></li>
+                    <li><GoCheck size={45} /></li>  
                 </ul>
             </div>
         </Container>
