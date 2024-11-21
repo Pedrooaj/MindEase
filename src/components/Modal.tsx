@@ -8,7 +8,7 @@ interface MyVerticallyCenteredModalProps {
     onHide: () => void;
     title: string;
     subtitle: string;
-    content: string;
+    content: React.ReactNode;
 }
 
 const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (props) => {
@@ -21,13 +21,13 @@ const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (pro
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    { props.title }
+                    {props.title}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <h4>{ props.subtitle }</h4>
+                <h4>{props.subtitle}</h4>
                 <p>
-                    { props.content }
+                    {props.content}
                 </p>
             </Modal.Body>
             <Modal.Footer>
