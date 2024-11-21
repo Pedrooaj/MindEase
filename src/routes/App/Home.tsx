@@ -23,7 +23,7 @@ const Home = () => {
         <>  
             <SearchBar />
             <Button className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
-            <Agendar onHide={() => setModal(false)} show={modal} />
+            <Agendar title="Agendar" subtitle="" content="Aqui ficararão todos inputs para realizarmos o agendamento" onHide={() => setModal(false)} show={modal} />
             <Cards>
                 <ConsultaCard nome="Dr.João" data="04/07/2024"/>   
                 <ConsultaCard nome="Dr.Mário" data="10/11/2024"/>
