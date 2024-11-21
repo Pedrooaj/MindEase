@@ -2,10 +2,12 @@ import { Outlet } from "react-router-dom";
 import NavBottom from "../../components/NavBottom";
 import styled from "styled-components";
 
+
 const Container = styled.div`
     width: 100%;
     height: 100%;
-    
+    background-color: #F2B3A9;
+
 `;
 
 const Content  = styled.div`

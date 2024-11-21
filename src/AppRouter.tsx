@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 import Default from "./routes/App/Default";
 import Home from "./routes/App/Home";
 import EsqueceuSenha from "./components/EsqueceuSenhaForm";
-import Agendamento from "./routes/App/Agendamento";
+import Agendamento from "./routes/Agendamento";
 
 const AppRoutes = () => {
   return (

@@ -16,6 +16,7 @@ const Contain = styled.div`
     padding: 7px;
     border-radius: 10px;
 
+
     & input{
         width: 100%;
         height: 100%;

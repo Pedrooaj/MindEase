@@ -15,6 +15,7 @@ const Card = styled.div`
     border: 2px solid black;
     justify-content: center;
     padding: 10px 30px 10px 30px;
+    background-color: #82B1FF;
     & #content-card{
         display: flex;
         justify-content: space-around;

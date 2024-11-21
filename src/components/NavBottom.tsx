@@ -5,13 +5,12 @@ import { MdAccountCircle } from "react-icons/md";
 
 
 const Nav = styled.div`
-    background-color: gray;
+    background-color: #BFC5D2;
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
     padding: 10px 5px 10px 5px;
-
     border: 2px solid black;
     position: absolute;
     bottom: 0;

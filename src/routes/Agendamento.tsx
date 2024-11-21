@@ -1,4 +1,4 @@
-import StatusAgendamento from "../../components/FormStatus";
+import StatusAgendamento from "../components/FormStatus";
 import styled from "styled-components";
 import { TbCalendarClock } from "react-icons/tb";
 import { IoIosChatbubbles } from "react-icons/io";
@@ -14,7 +14,7 @@ const Container = styled.div`
     align-items: center;
     align-items: center;
     flex-direction: column;
-
+    background-color: #F2B3A9;
     & #buttons{
         width: 100%;
         height: 20dvh;
@@ -51,10 +51,9 @@ const Agendamento = () => {
             <StatusAgendamento />
             <div id="buttons">
                 <ul>
- 
-                    <li><GoX size={45} /></li>
-                    <li style={{ marginBottom: "75px" }} ><IoIosChatbubbles  size={45} /></li>
-                    <li><GoCheck size={45} /></li>  
+                    <li style={{ backgroundColor: "red" }}><GoX size={45} /></li>
+                    <li style={{ marginBottom: "75px", backgroundColor: "#FFF9E6" }} ><IoIosChatbubbles  size={45} /></li>
+                    <li style={{ backgroundColor: "#00800097" }}><GoCheck size={45} /></li>  
                 </ul>
             </div>
         </Container>
