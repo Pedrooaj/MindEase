@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { MdAccountCircle } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Card = styled.div`
+    cursor: pointer;
     width: auto;
     height: auto;
     border-radius: 15px;
@@ -24,8 +26,9 @@ const Card = styled.div`
 `
 
 const ConsultaCard: React.FC<{nome: string, data: string}> = ({nome, data}) => {
+    const navigate = useNavigate();
     return (
-        <Card>
+        <Card onClick={() => navigate("/agendamento")}>
             <h1>{nome}</h1>
             <div id="content-card">
                 <MdAccountCircle size={55} />

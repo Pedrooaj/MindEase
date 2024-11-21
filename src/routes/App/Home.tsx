@@ -5,8 +5,6 @@ import { IoMdAddCircle } from "react-icons/io";
 import Agendar from "../../components/Modal";
 import { useState } from "react";
 import { Button, Form, Col, Row } from "react-bootstrap";
-import { toast } from "react-toastify";
-
 
 const Cards = styled.div`
     height: 60dvh;
@@ -21,11 +19,6 @@ const Cards = styled.div`
 
 const Home = () => {
     const [modal, setModal] = useState(false);
-
-    const handleModal = () => {
-        setModal(false);
-        toast.success("Consulta agendada com sucesso!", { position: "bottom-left" });
-    }  
 
     return (
         <>
@@ -64,7 +57,7 @@ const Home = () => {
 
  
                 </Form>
-            } onHide={() => handleModal()} show={modal} />
+            } onHide={() => setModal(false)} show={modal} />
             <Cards>
                 <ConsultaCard nome="Dr.João" data="04/07/2024" />
                 <ConsultaCard nome="Dr.Mário" data="10/11/2024" />

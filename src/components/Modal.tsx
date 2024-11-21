@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { toast } from "react-toastify";
 
 // Tipagem das props do modal
 interface MyVerticallyCenteredModalProps {
@@ -12,6 +13,10 @@ interface MyVerticallyCenteredModalProps {
 }
 
 const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (props) => {
+    const handleClick = () => {
+        props.onHide();
+        toast.success("Consulta agendada com sucesso", { position: "bottom-left" });
+    }
     return (
         <Modal
             {...props}
@@ -31,7 +36,7 @@ const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (pro
                 </p>
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={props.onHide}>Agendar</Button>
+                <Button onClick={handleClick}>Agendar</Button>
             </Modal.Footer>
         </Modal>
     );

@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import Default from "./routes/App/Default";
 import Home from "./routes/App/Home";
 import EsqueceuSenha from "./components/EsqueceuSenhaForm";
+import Agendamento from "./routes/App/Agendamento";
 
 const AppRoutes = () => {
   return (
@@ -21,8 +22,8 @@ const AppRoutes = () => {
         </Route>
         <Route path="/app" element={<Default />}>
           <Route index element={<Home />} />
-
         </Route>
+        <Route path="/agendamento" element={<Agendamento />} />
       </Routes>
       <ToastContainer />
       <GlobalStyle />
