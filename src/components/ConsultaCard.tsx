@@ -14,7 +14,7 @@ const Card = styled.div`
     align-items: center;
     border: 2px solid black;
     justify-content: center;
-    padding: 10px 30px 10px 30px;
+    padding: 5px 15px 5px 15px;
     background-color: #82B1FF;
     & #content-card{
         display: flex;

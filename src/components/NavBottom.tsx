@@ -10,7 +10,7 @@ const Nav = styled.div`
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 10px 5px 10px 5px;
+    padding: 5px;
     border: 2px solid black;
     position: absolute;
     bottom: 0;
@@ -44,9 +44,9 @@ const NavBottom = () => {
     return (
         <Nav>
             <ul>
-                <li><TfiAgenda size={25} /> <a href="">Agenda</a></li>
-                <li><IoIosChatbubbles size={25} /><a href="">Dialogo</a></li>
-                <li><MdAccountCircle size={25} /><a href="">Conta</a></li>
+                <li><TfiAgenda size={21} /> <a href="">Agenda</a></li>
+                <li><IoIosChatbubbles size={21} /><a href="">Dialogo</a></li>
+                <li><MdAccountCircle size={21} /><a href="">Conta</a></li>
             </ul>
         </Nav>
     )
