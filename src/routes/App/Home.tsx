@@ -3,6 +3,8 @@ import ConsultaCard from "../../components/ConsultaCard";
 import SearchBar from "../../components/SearchBar";
 import styled from "styled-components";
 import { IoMdAddCircle } from "react-icons/io";
+import Agendar from "../../components/Modal";
+import { useState } from "react";
 
 const Cards = styled.div`
     height: 60dvh;
@@ -16,10 +18,12 @@ const Cards = styled.div`
 `
 
 const Home = () => {
+    const [modal, setModal] = useState(false);
     return (
         <>  
             <SearchBar />
-            <Button className="mb-auto" size="lg" >Agendar <IoMdAddCircle /></Button>
+            <Button className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
+            <Agendar onHide={() => setModal(false)} show={modal} />
             <Cards>
                 <ConsultaCard nome="Dr.João" data="04/07/2024"/>   
                 <ConsultaCard nome="Dr.Mário" data="10/11/2024"/>

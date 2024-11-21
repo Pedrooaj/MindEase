@@ -10,7 +10,7 @@ const Nav = styled.div`
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 15px 5px 15px 5px;
+    padding: 10px 5px 10px 5px;
     border-radius: 30px 30px 0 0;
     border: 2px solid black;
     position: absolute;
