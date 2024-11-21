@@ -1,5 +1,6 @@
-import styled from "styled-components"
-import { FaSearch } from "react-icons/fa"
+import styled from "styled-components";
+import { FaSearch } from "react-icons/fa";
+import { IoFilter } from "react-icons/io5";
 
 const Contain = styled.div`
     margin-bottom: auto;
@@ -30,6 +31,7 @@ const SearchBar = () => {
         <Contain>
             <FaSearch size={20} color="black" />
             <input type="text" placeholder="Pesquisar" />
+            <IoFilter size={25} color="black"/>
         </Contain>
     )
 }
