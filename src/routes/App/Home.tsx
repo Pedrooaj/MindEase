@@ -59,10 +59,10 @@ const Home = () => {
                 </Form>
             } onHide={() => setModal(false)} show={modal} />
             <Cards>
-                <ConsultaCard nome="Dr.João" data="04/07/2024" />
-                <ConsultaCard nome="Dr.Mário" data="10/11/2024" />
-                <ConsultaCard nome="Dr.Pedro" data="07/11/2024" />
-                <ConsultaCard nome="Dr.Marcos" data="03/12/2024" />
+                <ConsultaCard nome="Dr.João" data="04/07/2024" status="LuCalendarClock" />
+                <ConsultaCard nome="Dr.Mário" data="10/11/2024" status="LuCalendarCheck2" />
+                <ConsultaCard nome="Dr.Pedro" data="07/11/2024"  status="LuCalendarMinus" />
+                <ConsultaCard nome="Dr.Marcos" data="03/12/2024" status="LuCalendarClock"/>
             </Cards>
         </>
     )

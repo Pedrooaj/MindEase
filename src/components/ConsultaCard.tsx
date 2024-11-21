@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { MdAccountCircle } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { LuCalendarClock } from "react-icons/lu";
+import { LuCalendarCheck2 } from "react-icons/lu";
+import { LuCalendarMinus } from "react-icons/lu";
 
 const Card = styled.div`
     cursor: pointer;
@@ -25,13 +27,13 @@ const Card = styled.div`
     }
 `
 
-const ConsultaCard: React.FC<{nome: string, data: string}> = ({nome, data}) => {
+const ConsultaCard: React.FC<{ nome: string, data: string, status: string }> = ({ nome, data, status }) => {
     const navigate = useNavigate();
     return (
         <Card onClick={() => navigate("/agendamento")}>
             <h1>{nome}</h1>
             <div id="content-card">
-                <MdAccountCircle size={55} />
+                {status == "LuCalendarClock" ? <LuCalendarClock size={40} /> : status == "LuCalendarCheck2" ? <LuCalendarCheck2 size={40} /> : status == "LuCalendarMinus" ? <LuCalendarMinus size={40} /> : ""}
                 <h2>{data}</h2>
             </div>
         </Card>

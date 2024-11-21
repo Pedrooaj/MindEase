@@ -11,7 +11,7 @@ const Nav = styled.div`
     width: 100%;
     height: auto;
     padding: 10px 5px 10px 5px;
-    border-radius: 30px 30px 0 0;
+
     border: 2px solid black;
     position: absolute;
     bottom: 0;
