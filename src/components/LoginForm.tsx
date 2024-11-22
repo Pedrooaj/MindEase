@@ -17,7 +17,7 @@ const FormContainer = styled.form`
     height: auto;
     padding: 30px;
     border-radius: 20px;
-  
+  background-color: #BFC5D2;
     
 
     -webkit-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);

@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 #root{
+  background-color: #FFF9E6;
   overflow: hidden;
   width: 100%;
   height: 100dvh;

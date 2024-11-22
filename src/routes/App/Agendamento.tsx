@@ -1,4 +1,4 @@
-import StatusAgendamento from "../components/FormStatus";
+import FormStatus from "../../components/FormStatus";
 import styled from "styled-components";
 import { TbCalendarClock } from "react-icons/tb";
 import { IoIosChatbubbles } from "react-icons/io";
@@ -14,7 +14,7 @@ const Container = styled.div`
     align-items: center;
     align-items: center;
     flex-direction: column;
-    background-color: #F2B3A9;
+    background-color: #FFF9E6;
     & #buttons{
         width: 100%;
         height: 20dvh;
@@ -48,12 +48,12 @@ const Agendamento = () => {
         <Container>
             <GoArrowLeft onClick={() => navigate(-1)} size={40} style={{ marginRight: "auto", cursor: "pointer" }} />
             <TbCalendarClock size={75} style={{ marginTop: "auto"  }} />
-            <StatusAgendamento />
+            <FormStatus />
             <div id="buttons">
                 <ul>
-                    <li style={{ backgroundColor: "red" }}><GoX size={45} /></li>
-                    <li style={{ marginBottom: "75px", backgroundColor: "#FFF9E6" }} ><IoIosChatbubbles  size={45} /></li>
-                    <li style={{ backgroundColor: "#00800097" }}><GoCheck size={45} /></li>  
+                    <li onClick={() => navigate(-1)} style={{ backgroundColor: "red" }}><GoX size={45} /></li>
+                    <li onClick={() => navigate("/chat")} style={{ marginBottom: "75px", backgroundColor: "#F2B3A9" }} ><IoIosChatbubbles  size={45} /></li>
+                    <li onClick={() => navigate(-1)} style={{ backgroundColor: "#00800097" }}><GoCheck size={45} /></li>  
                 </ul>
             </div>
         </Container>

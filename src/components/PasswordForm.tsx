@@ -18,6 +18,7 @@ const FormContainer = styled.div`
     -webkit-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
     box-shadow: 11px 7px 30px 1px rgba(0,0,0,0.75);
+    background-color: #BFC5D2;
     & #Input{
         width: 100%;
     }
