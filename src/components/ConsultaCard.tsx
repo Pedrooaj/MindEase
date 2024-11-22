@@ -12,10 +12,10 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid gray;
     justify-content: center;
     padding: 5px 15px 5px 15px;
-    background-color: #82B1FF;
+    background-color: white;
     & #content-card{
         display: flex;
         justify-content: space-around;

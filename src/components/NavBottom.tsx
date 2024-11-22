@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { TfiAgenda } from "react-icons/tfi";
 import { IoIosChatbubbles } from "react-icons/io";
 import { MdAccountCircle } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 
 const Nav = styled.div`
@@ -41,12 +42,13 @@ const Nav = styled.div`
 
 
 const NavBottom = () => {
+    const navigate = useNavigate();
     return (
         <Nav>
             <ul>
                 <li><TfiAgenda size={21} /> <a href="">Agenda</a></li>
                 <li><IoIosChatbubbles size={21} /><a href="">Dialogo</a></li>
-                <li><MdAccountCircle size={21} /><a href="">Conta</a></li>
+                <li onClick={() => navigate("/conta")}><MdAccountCircle size={21} /><a href="">Conta</a></li>
             </ul>
         </Nav>
     )

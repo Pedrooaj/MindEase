@@ -15,7 +15,7 @@ interface MyVerticallyCenteredModalProps {
 const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (props) => {
     const handleClick = () => {
         props.onHide();
-        toast.success("Consulta agendada com sucesso", { position: "bottom-left" });
+        toast.success("Consulta agendada com sucesso", { position: "top-center", autoClose: 3000 });
     }
     return (
         <Modal
@@ -23,19 +23,20 @@ const MyVerticallyCenteredModal: React.FC<MyVerticallyCenteredModalProps> = (pro
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+            
         >
-            <Modal.Header closeButton>
+            <Modal.Header style={{ backgroundColor: "#BFC5D2"}} closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     {props.title}
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body style={{ backgroundColor: "#BFC5D2"}}>
                 <h4>{props.subtitle}</h4>
                 <p>
                     {props.content}
                 </p>
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer style={{ backgroundColor: "#BFC5D2"}}>
                 <Button onClick={handleClick}>Agendar</Button>
             </Modal.Footer>
         </Modal>

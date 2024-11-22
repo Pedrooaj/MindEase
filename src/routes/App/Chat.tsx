@@ -44,7 +44,7 @@ const Chat = () => {
     return (
         <ChatContainer>
             <header id="autor">
-            <GoArrowLeft onClick={() => navigate(-1)} size={40} />
+            <GoArrowLeft style={{ position: "absolute", top: "0", left: "0" }} onClick={() => navigate(-1)} size={40} />
             <div id="user-content">João<FaRegUserCircle  size={40} /></div>
             </header>
             <main>

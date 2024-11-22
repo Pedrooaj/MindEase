@@ -44,7 +44,7 @@ const EsqueceuSenha = () => {
     const navigate = useNavigate();
 
     const recuperarSenha = () => {
-        toast.success("Email enviado", { position: "bottom-left", autoClose: 3000 });
+        toast.success("Email enviado", { position: "top-center", autoClose: 3000 });
         navigate("/");
     }
 

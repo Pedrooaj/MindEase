@@ -58,7 +58,7 @@ const LoginForm = () => {
     }
 
     navigate("app")
-    toast("Seja bem Vindo!", { position: "bottom-left" });
+    toast.success("Seja bem Vindo!", { position: "top-center" });
     
   }
 

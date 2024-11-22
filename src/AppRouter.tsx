@@ -1,14 +1,15 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import GlobalStyle from "./GlobalStyle";
-import Login from "./routes/Login";
-import Registro from "./routes/Registro/Registro";
-import Senha from "./routes/Registro/Senha";
+import Login from "./routes/auth/Login";
+import Registro from "./routes/auth/Registro";
+import Senha from "./routes/auth/Senha";
 import { ToastContainer } from "react-toastify";
 import Default from "./routes/App/Default";
 import Home from "./routes/App/Home";
 import EsqueceuSenha from "./components/EsqueceuSenhaForm";
 import Agendamento from "./routes/App/Agendamento";
 import Chat from "./routes/App/Chat";
+import Conta from "./routes/App/Conta";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes = () => {
         </Route>
         <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/conta" element={<Conta />} />
          
       </Routes>
       <ToastContainer />

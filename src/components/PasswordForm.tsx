@@ -44,7 +44,7 @@ const PasswordForm = () => {
     const navigate = useNavigate();
 
     const registrar = () => {
-        toast.success("Registrado com sucesso", { position: "bottom-left", autoClose: 3000 });
+        toast.success("Registrado com sucesso", { position: "top-center", autoClose: 3000 });
         navigate("/");
     }
 
