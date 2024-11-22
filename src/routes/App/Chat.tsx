@@ -16,7 +16,7 @@ const ChatContainer = styled.div`
         width: 100%;
         height: auto;
         border-bottom: 2px solid black;
-        padding-bottom: 5px;
+        padding: 5px;
         display: flex;
 
     }
