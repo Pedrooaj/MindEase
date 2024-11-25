@@ -12,6 +12,7 @@ const DiaologoContainer = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 `;
 
 const ChatsList = styled.ul`
