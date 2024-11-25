@@ -34,12 +34,15 @@ const ContainerChatItem = styled.li`
         text-overflow: ellipsis;
     }
 
+    #user-icon{
+        font-size: 2rem;
+    }
 `;
 
 const ChatItem: React.FC<{ nome: string, mensagem: string, data: string }> = ({ mensagem, nome, data }) => {
     return (
         <ContainerChatItem>
-            <FaRegCircleUser size={30} />
+            <FaRegCircleUser id="user-icon" />
             <div id="info">
                 <h1  >{nome}</h1>
                 <p id="mensagem">{mensagem}</p>
