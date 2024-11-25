@@ -6,13 +6,12 @@ import ChatItem from "../../components/ChatItem";
 
 const DiaologoContainer = styled.div`
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
 `;
 
 const ChatsList = styled.ul`
