@@ -8,10 +8,14 @@ const ContainerChatItem = styled.li`
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 4px;
-    gap: 10px;
+    gap: 5px;
 
+    p, h1{
+        padding: 0;
+        margin: 0;
+    }
    
    
     #info{
@@ -19,18 +23,20 @@ const ContainerChatItem = styled.li`
         height: 100%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     #mensagem{
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        margin: 0;
-        padding: 0;
+
     }
 
     #user-icon{
-        font-size: 2rem;
+        font-size: 2em;
     }
 `;
 
