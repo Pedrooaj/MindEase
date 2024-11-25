@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 
 const ContainerChatItem = styled.li`
     width: 100%;
@@ -41,11 +42,13 @@ const ContainerChatItem = styled.li`
 `;
 
 const ChatItem: React.FC<{ nome: string, mensagem: string, data: string }> = ({ mensagem, nome, data }) => {
+    const navigate: NavigateFunction = useNavigate();
+
     return (
-        <ContainerChatItem>
+        <ContainerChatItem onClick={() => navigate("/chat")}>
             <FaRegCircleUser id="user-icon" />
             <div id="info">
-                <h1 style={{ margin: 0, padding: 0 }} >{nome}</h1>
+                <h1 style={{ fontSize: "1.5em" }} >{nome}</h1>
                 <p id="mensagem">{mensagem}</p>
             </div>
             <p>{data}</p>
