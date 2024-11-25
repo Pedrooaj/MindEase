@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
         <>
-            <SearchBar />
+            <SearchBar placeholder="Pesquisar" />
             <Button style={{ fontSize: "1.6rem", backgroundColor: "GrayText", border: "2px solid black" }} className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
             <Agendar title="Agendar" subtitle="" content={
                 <Form >

@@ -26,11 +26,11 @@ const Contain = styled.div`
 
 `
 
-const SearchBar = () => {
+const SearchBar: React.FC<{ placeholder: string }> = ({placeholder}) => {
     return (
         <Contain>
             <FaSearch size={20} color="black" />
-            <input type="text" placeholder="Pesquisar" />
+            <input type="text" placeholder={placeholder} />
             <IoFilter size={25} color="black"/>
         </Contain>
     )

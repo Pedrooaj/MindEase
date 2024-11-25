@@ -10,6 +10,7 @@ import EsqueceuSenha from "./components/EsqueceuSenhaForm";
 import Agendamento from "./routes/App/Agendamento";
 import Chat from "./routes/App/Chat";
 import Conta from "./routes/App/Conta";
+import Dialogo from "./routes/App/Dialogo";
 
 const AppRoutes = () => {
   return (
@@ -24,11 +25,12 @@ const AppRoutes = () => {
         </Route>
         <Route path="/app" element={<Default />}>
           <Route index element={<Home />} />
+          <Route path="dialogos" element={<Dialogo />} />
         </Route>
         <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/conta" element={<Conta />} />
-         
+ 
       </Routes>
       <ToastContainer />
       <GlobalStyle />
