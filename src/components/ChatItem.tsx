@@ -3,7 +3,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 
 const ContainerChatItem = styled.li`
     width: 100%;
-    height: 7dvh;
+    height: 15dvh;
     border: 2px solid black;
     list-style: none;
     display: flex;
