@@ -46,7 +46,7 @@ const NavBottom = () => {
     return (
         <Nav>
             <ul>
-                <li onClick={() => navigate(-1)}><TfiAgenda size={21} /> <a href="">Agenda</a></li>
+                <li onClick={() => navigate("/app")}><TfiAgenda size={21} /> <a href="">Agenda</a></li>
                 <li onClick={() => navigate("dialogos")}><IoIosChatbubbles size={21} /><a href="">Dialogo</a></li>
                 <li onClick={() => navigate("/conta")}><MdAccountCircle size={21} /><a href="">Conta</a></li>
             </ul>
