@@ -13,14 +13,7 @@ const ContainerChatItem = styled.li`
     gap: 10px;
 
    
-    h1{
-        font-size: 20px;
-    }
-    h1, p {
-        margin: 0;
-        padding: 0;
-    } 
-
+   
     #info{
         width: 60%;
         height: 100%;
@@ -32,6 +25,8 @@ const ContainerChatItem = styled.li`
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        margin: 0;
+        padding: 0;
     }
 
     #user-icon{
@@ -44,7 +39,7 @@ const ChatItem: React.FC<{ nome: string, mensagem: string, data: string }> = ({ 
         <ContainerChatItem>
             <FaRegCircleUser id="user-icon" />
             <div id="info">
-                <h1  >{nome}</h1>
+                <h1 style={{ margin: 0, padding: 0 }} >{nome}</h1>
                 <p id="mensagem">{mensagem}</p>
             </div>
             <p>{data}</p>
