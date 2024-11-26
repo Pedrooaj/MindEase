@@ -10,7 +10,7 @@ const Contain = styled.div`
     gap: 10px;
     padding: 0;
     width: 90%;
-    height: 7dvh;
+    height: 6dvh;
     opacity: 0.8;
     border: 2px solid black;
     padding: 7px;
