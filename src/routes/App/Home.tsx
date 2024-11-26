@@ -12,6 +12,7 @@ const Cards = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding-top: 20px;
     margin-bottom: auto;
     overflow-y: scroll;
 
