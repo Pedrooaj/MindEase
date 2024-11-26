@@ -5,12 +5,13 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
--webkit-user-select: none;   /* Para navegadores WebKit (Chrome, Safari) */
+  -webkit-user-select: none;   /* Para navegadores WebKit (Chrome, Safari) */
   -moz-user-select: none;      /* Para navegadores Mozilla (Firefox) */
   -ms-user-select: none;       /* Para Internet Explorer */
   user-select: none; 
+}
+
+
 
 #root{
   background-color: #FFF9E6;
