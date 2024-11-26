@@ -7,6 +7,11 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 
+-webkit-user-select: none;   /* Para navegadores WebKit (Chrome, Safari) */
+  -moz-user-select: none;      /* Para navegadores Mozilla (Firefox) */
+  -ms-user-select: none;       /* Para Internet Explorer */
+  user-select: none; 
+
 #root{
   background-color: #FFF9E6;
   overflow: hidden;
