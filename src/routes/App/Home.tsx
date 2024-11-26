@@ -12,7 +12,6 @@ const Cards = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-top: 20px;
     margin-bottom: auto;
     overflow-y: scroll;
 
@@ -26,8 +25,7 @@ const Home = () => {
             <SearchBar placeholder="Pesquisar" />
             <Button style={{ fontSize: "1.6rem", backgroundColor: "GrayText", border: "2px solid black" }} className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
             <Agendar title="Agendar" subtitle="" content={
-                <Form >
-
+                <Form>
                     <Row className="mb-3">
 
                         <Form.Group as={Col} controlId="formGridState">

@@ -17,7 +17,7 @@ const Content  = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 35px;
     
 `
 
