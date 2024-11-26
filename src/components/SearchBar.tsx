@@ -9,7 +9,7 @@ const Contain = styled.div`
     justify-content: center;
     gap: 10px;
     padding: 0;
-    width: 80%;
+    width: 90%;
     height: 7dvh;
     opacity: 0.8;
     border: 2px solid black;
