@@ -58,15 +58,9 @@ const Conta = () => {
                 <FloatingLabel controlId="nome" label="Nome">
                     <Form.Control type="text" placeholder="Nome" />
                 </FloatingLabel>
-                <FloatingLabel
-                    controlId="floatingInput"
-                    label="Cargo"
-                >
-                    <Form.Control type="Cargo" style={{ cursor: "not-allowed" }} disabled placeholder="cargo" />
-                </FloatingLabel>
-                <FloatingLabel controlId="cpf" label="CPF/CRM">
-                    <Form.Control type="text" placeholder="CPF/CRM" disabled />
-                </FloatingLabel>
+                <h1>
+                    CRM/CPF
+                </h1>
  
 
                 <div id="buttons" >
