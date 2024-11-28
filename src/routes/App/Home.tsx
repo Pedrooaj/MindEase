@@ -8,6 +8,7 @@ import { Button, Form, Col, Row } from "react-bootstrap";
 
 const Cards = styled.div`
     height: 60dvh;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
