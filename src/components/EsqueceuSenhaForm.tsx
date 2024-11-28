@@ -52,7 +52,7 @@ const EsqueceuSenha = () => {
         <FormContainer>
             <h1>MindEase <LuBrain size={"1.5em"} /></h1>
             <FloatingLabel id='Input' controlId="floatingPassword" className='mb-3' label="CPF*">
-                <Form.Control type="text" placeholder="Digitel Seu Email" />
+                <Form.Control type="number" placeholder="Digitel Seu CPF" />
             </FloatingLabel>
             <FloatingLabel id='Input' controlId="floatingPassword" className='mb-3' label="Email*">
                 <Form.Control type="email" placeholder="Email" />

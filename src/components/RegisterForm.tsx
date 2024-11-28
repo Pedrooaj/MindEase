@@ -58,7 +58,7 @@ const RegisterForm = () => {
                     className="mb-3"
                     id='Input'
                 >
-                    <Form.Control type="text" placeholder="CPF" />
+                    <Form.Control type="number" placeholder="CPF" />
                 </FloatingLabel>
                 <FloatingLabel
                     style={{ width: '50%' }}
