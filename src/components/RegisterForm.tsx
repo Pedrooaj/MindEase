@@ -67,7 +67,7 @@ const RegisterForm = () => {
                     className="mb-3"
                     id='Input'
                 >
-                    <Form.Control type="text" placeholder="CRM" />
+                    <Form.Control type="number" placeholder="CRM" />
                 </FloatingLabel>
             </div>
             <FloatingLabel

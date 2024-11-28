@@ -61,12 +61,13 @@ const Conta = () => {
                 >
                     <Form.Control type="Cargo" style={{ cursor: "not-allowed" }} disabled placeholder="cargo" />
                 </FloatingLabel>
+                <FloatingLabel controlId="cpf" label="CPF/CRM">
+                    <Form.Control type="text" placeholder="CPF/CRM" disabled />
+                </FloatingLabel>
                 <FloatingLabel controlId="nome" label="Nome">
                     <Form.Control type="text" placeholder="Nome" />
                 </FloatingLabel>
-                <FloatingLabel controlId="cpf" label="CPF/CRM">
-                    <Form.Control type="text" placeholder="CPF/CRM" />
-                </FloatingLabel>
+
                 <div id="buttons" >
                     <OverlayTrigger
                         placement="right"
