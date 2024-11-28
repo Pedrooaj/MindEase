@@ -6,9 +6,14 @@ import Agendar from "../../components/Modal";
 import { useState } from "react";
 import { Button, Form, Col, Row } from "react-bootstrap";
 
+const Container = styled.div`
+    width: 100%;
+    
+`
+
+
 const Cards = styled.div`
     height: 60dvh;
-    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +27,7 @@ const Home = () => {
     const [modal, setModal] = useState(false);
 
     return (
-        <>
+        <Container>
             <SearchBar placeholder="Pesquisar" />
             <Button style={{ fontSize: "1.6rem", backgroundColor: "GrayText", border: "2px solid black" }} className="mb-auto" size="lg" onClick={() => setModal(true)} >Agendar <IoMdAddCircle /></Button>
             <Agendar title="Agendar" subtitle="" content={
@@ -64,7 +69,7 @@ const Home = () => {
                 <ConsultaCard nome="Dr.Pedro" data="07/11/2024"  status="LuCalendarMinus" />
                 <ConsultaCard nome="Dr.Marcos" data="03/12/2024" status="LuCalendarClock"/>
             </Cards>
-        </>
+        </Container>
     )
 
 }
