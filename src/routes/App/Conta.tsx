@@ -59,8 +59,11 @@ const Conta = () => {
                     <Form.Control type="text" placeholder="Nome" />
                 </FloatingLabel>
                 <h1>
-                    CRM/CPF
+                    Pedro Antônio Mendes Lemos
                 </h1>
+                <h2>
+                    CRM/CPF
+                </h2>
  
 
                 <div id="buttons" >
