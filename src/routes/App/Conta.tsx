@@ -2,8 +2,6 @@ import { GoArrowLeft } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { FaRegUserCircle } from "react-icons/fa";
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
 import { FaTrash } from "react-icons/fa";
 import { TfiReload } from "react-icons/tfi";
 import Button from 'react-bootstrap/Button';
@@ -30,6 +28,10 @@ const ContaContainer = styled.div`
         height: auto;
         margin-top: 5px;
     }
+    & h1, h2{
+        text-align: center;
+        white-space: break-spaces;
+    }
 `;
 
 const Conta = () => {
@@ -55,17 +57,12 @@ const Conta = () => {
             <GoArrowLeft onClick={() => navigate(-1)} size={40} />
             <main>
                 <FaRegUserCircle size={150} />
-                <FloatingLabel controlId="nome" label="Nome">
-                    <Form.Control type="text" placeholder="Nome" />
-                </FloatingLabel>
                 <h1>
                     Pedro Antônio Mendes Lemos
                 </h1>
                 <h2>
                     CRM/CPF
                 </h2>
- 
-
                 <div id="buttons" >
                     <OverlayTrigger
                         placement="right"
