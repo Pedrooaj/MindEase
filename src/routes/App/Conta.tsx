@@ -55,6 +55,9 @@ const Conta = () => {
             <GoArrowLeft onClick={() => navigate(-1)} size={40} />
             <main>
                 <FaRegUserCircle size={150} />
+                <FloatingLabel controlId="nome" label="Nome">
+                    <Form.Control type="text" placeholder="Nome" />
+                </FloatingLabel>
                 <FloatingLabel
                     controlId="floatingInput"
                     label="Cargo"
@@ -64,9 +67,7 @@ const Conta = () => {
                 <FloatingLabel controlId="cpf" label="CPF/CRM">
                     <Form.Control type="text" placeholder="CPF/CRM" disabled />
                 </FloatingLabel>
-                <FloatingLabel controlId="nome" label="Nome">
-                    <Form.Control type="text" placeholder="Nome" />
-                </FloatingLabel>
+ 
 
                 <div id="buttons" >
                     <OverlayTrigger
