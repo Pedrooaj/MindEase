@@ -73,7 +73,7 @@ const LoginForm = () => {
         id='Input'
         
       >
-        <Form.Control type="text" placeholder="Nome" onChange={(e) => setUser({...user, cpf: e.target.value})} />
+        <Form.Control type="number" placeholder="Nome" onChange={(e) => setUser({...user, cpf: e.target.value})} />
       </FloatingLabel>
       <a onClick={() => navigate("/recuperar")} style={{ marginLeft: 'auto' }} className='mb-1' >Esqueceu a senha?</a>
       <FloatingLabel id='Input' controlId="floatingPassword" className='mb-2' label="Senha">
