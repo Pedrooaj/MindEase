@@ -20,7 +20,7 @@ const ContaContainer = styled.div`
 
     & h1, h2{
         text-align: center;
-        white-space: break-spaces;
+
     }
 `;
 
