@@ -19,6 +19,7 @@ const ContaContainer = styled.div`
     }
 
     & h1{
+        scale: 0.9;
         text-align: center;
         padding: 0;
         margin: 0;
