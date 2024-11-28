@@ -18,9 +18,17 @@ const ContaContainer = styled.div`
 
     }
 
-    & h1, h2{
+    & h1{
         text-align: center;
+        padding: 0;
+        margin: 0;
+    }
 
+    & h2{
+        scale: 0.8;
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 `;
 
@@ -32,12 +40,14 @@ const Conta = () => {
             <GoArrowLeft onClick={() => navigate(-1)} size={40} />
             <main>
                 <FaRegUserCircle size={150} />
-                <h1>
-                    Pedro Antônio Mendes Lemos
-                </h1>
-                <h2>
-                    CRM/CPF
-                </h2>
+                <div>
+                    <h1>
+                        Pedro Antônio Mendes Lemos
+                    </h1>
+                    <h2>
+                        CRM/CPF
+                    </h2>
+                </div>
 
             </main>
         </ContaContainer>
