@@ -46,7 +46,7 @@ const Conta = () => {
                         Pedro Antônio Mendes Lemos
                     </h1>
                     <h2>
-                        CRM/CPF
+                        CRP/CPF
                     </h2>
                 </div>
 

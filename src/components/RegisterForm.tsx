@@ -63,7 +63,7 @@ const RegisterForm = () => {
                 <FloatingLabel
                     style={{ width: '50%' }}
                     controlId="floatingInput"
-                    label="CRM"
+                    label="CRP"
                     className="mb-3"
                     id='Input'
                 >

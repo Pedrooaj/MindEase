@@ -68,7 +68,7 @@ const LoginForm = () => {
        { erro ? <Alerta variant='danger'>❌ Preencha todos os campos</Alerta> : null }
       <FloatingLabel
         controlId="floatingInput"
-        label="CRM/CPF"
+        label="CRP/CPF"
         className="mb-3"
         id='Input'
         

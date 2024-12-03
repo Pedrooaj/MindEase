@@ -44,9 +44,9 @@ const Home = () => {
                             <Form.Label>Paciente/Terapeuta</Form.Label>
                             <Form.Select defaultValue="Choose...">
                                 <option>Escolha...</option>
-                                <option>Dr.Marcelo</option>
-                                <option>Dr.Miqueias</option>
-                                <option>Dr.Matias</option>
+                                <option>Marcelo</option>
+                                <option>Miqueias</option>
+                                <option>Matias</option>
                                 <option>Antônio</option>
                             </Form.Select>
                         </Form.Group>
@@ -70,10 +70,10 @@ const Home = () => {
                 </Form>
             } onHide={() => setModal(false)} show={modal} />
             <Cards>
-                <ConsultaCard hora="10:30" nome="Dr.João" data="04/07/2024" status="LuCalendarClock" />
-                <ConsultaCard hora="13:25" nome="Dr.Mário" data="10/11/2024" status="LuCalendarCheck2" />
-                <ConsultaCard hora="16:00" nome="Dr.Pedro" data="07/11/2024"  status="LuCalendarMinus" />
-                <ConsultaCard hora="07:00" nome="Dr.Marcos" data="03/12/2024" status="LuCalendarClock"/>
+                <ConsultaCard hora="10:30" nome="João" data="04/07/2024" status="LuCalendarClock" />
+                <ConsultaCard hora="13:25" nome="Mário" data="10/11/2024" status="LuCalendarCheck2" />
+                <ConsultaCard hora="16:00" nome="Pedro" data="07/11/2024"  status="LuCalendarMinus" />
+                <ConsultaCard hora="07:00" nome="Marcos" data="03/12/2024" status="LuCalendarClock"/>
             </Cards>
         </Container>
     )
