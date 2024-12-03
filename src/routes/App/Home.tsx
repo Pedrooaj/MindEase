@@ -8,12 +8,18 @@ import { Button, Form, Col, Row } from "react-bootstrap";
 
 const Container = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
     
 `
 
 
 const Cards = styled.div`
     height: 60dvh;
+    width: 100%;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,10 +70,10 @@ const Home = () => {
                 </Form>
             } onHide={() => setModal(false)} show={modal} />
             <Cards>
-                <ConsultaCard nome="Dr.João" data="04/07/2024" status="LuCalendarClock" />
-                <ConsultaCard nome="Dr.Mário" data="10/11/2024" status="LuCalendarCheck2" />
-                <ConsultaCard nome="Dr.Pedro" data="07/11/2024"  status="LuCalendarMinus" />
-                <ConsultaCard nome="Dr.Marcos" data="03/12/2024" status="LuCalendarClock"/>
+                <ConsultaCard hora="10:30" nome="Dr.João" data="04/07/2024" status="LuCalendarClock" />
+                <ConsultaCard hora="13:25" nome="Dr.Mário" data="10/11/2024" status="LuCalendarCheck2" />
+                <ConsultaCard hora="16:00" nome="Dr.Pedro" data="07/11/2024"  status="LuCalendarMinus" />
+                <ConsultaCard hora="07:00" nome="Dr.Marcos" data="03/12/2024" status="LuCalendarClock"/>
             </Cards>
         </Container>
     )

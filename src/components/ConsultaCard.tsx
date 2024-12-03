@@ -6,7 +6,7 @@ import { LuCalendarMinus } from "react-icons/lu";
 
 const Card = styled.div`
     cursor: pointer;
-    width: auto;
+    width: 90%;
     height: auto;
     border-radius: 15px;
     display: flex;
@@ -20,6 +20,7 @@ const Card = styled.div`
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
         gap: 20px;
         & h2{
             margin: 0;
@@ -28,14 +29,17 @@ const Card = styled.div`
     }
 `
 
-const ConsultaCard: React.FC<{ nome: string, data: string, status: string }> = ({ nome, data, status }) => {
+const ConsultaCard: React.FC<{ nome: string, data: string, status: string, hora: string }> = ({ nome, data, status, hora }) => {
     const navigate = useNavigate();
     return (
         <Card onClick={() => navigate("/agendamento")}>
             <h1>{nome}</h1>
             <div id="content-card">
                 {status == "LuCalendarClock" ? <LuCalendarClock size={40} /> : status == "LuCalendarCheck2" ? <LuCalendarCheck2 size={40} /> : status == "LuCalendarMinus" ? <LuCalendarMinus size={40} /> : ""}
-                <h2>{data}</h2>
+                <div style={{ textAlign: "center" }}>
+                    <h2>{data}</h2>
+                    <p>{hora}</p>
+                </div>
             </div>
         </Card>
     )
